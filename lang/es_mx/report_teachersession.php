@@ -40,3 +40,6 @@ $string['teacher'] = 'Profesor';
 $string['totalstudents'] = 'Total de estudiantes';
 $string['totalstudentslogin'] = 'Ingresaron';
 $string['totalstudentsnotlogin'] = 'No Ingresaron';
+$string['period'] = 'Periodo académico';
+$string['semester'] = 'Semestre';
+$string['program'] = 'Programa'; 

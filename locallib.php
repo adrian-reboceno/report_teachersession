@@ -117,8 +117,6 @@ function report_teachersession_get_lastaccess($filter){
     JOIN {user} AS u ON u.id = asg.userid 
     JOIN {course} AS course ON context.instanceid = course.id WHERE asg.roleid = 5
     AND course.id = c.id) AS totalstudents
-
-    
     FROM {course} as c  
     LEFT JOIN {context} AS ctx ON c.id = ctx.instanceid
     JOIN {role_assignments} AS lra ON lra.contextid = ctx.id

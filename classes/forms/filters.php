@@ -38,25 +38,25 @@ class filters extends \moodleform {
             case '2':
                 # code... 
                 $attributes = ["onchange" => "javascript:get_program(this.value,false)", ];              
-                $mform->addElement('select',  'period',  get_string('period', 'report_studentsession'),  $category, $attributes);   // periodo
+                $mform->addElement('select',  'period',  get_string('period', 'report_teachersession'),  $category, $attributes);   // periodo
                 $attributes = ["onchange" => "javascript:get_semester(this.value,false)", ];
-                $mform->addElement('select',  'program',  get_string('program','report_studentsession'),'', $attributes); // programa */
+                $mform->addElement('select',  'program',  get_string('program','report_teachersession'),'', $attributes); // programa */
                 break;
             case '3':
                 # code...
                 $attributes = ["onchange" => "javascript:get_program(this.value,false)", ];              
-                $mform->addElement('select',  'period',  get_string('period', 'report_studentsession'),  $category, $attributes);   // periodo
+                $mform->addElement('select',  'period',  get_string('period', 'report_teachersession'),  $category, $attributes);   // periodo
                 $attributes = ["onchange" => "javascript:get_semester(this.value,false)", ];
-                $mform->addElement('select',  'program',  get_string('program','report_studentsession'),'', $attributes); // programa */
+                $mform->addElement('select',  'program',  get_string('program','report_teachersession'),'', $attributes); // programa */
                 break;
             default:
                 # code...
                 $attributes = ["onchange" => "javascript:get_semester(this.value,false)", ];              
-                $mform->addElement('select',  'period',  get_string('period', 'report_studentsession'),  $category, $attributes);   // periodo              
+                $mform->addElement('select',  'period',  get_string('period', 'report_teachersession'),  $category, $attributes);   // periodo              
                 break;
         }
         $attributes = ["onchange" => "javascript:get_course(this.value,false)", ];
-        $mform->addElement('select',  'semester',  get_string('semester','report_studentsession'),'', $attributes); // semestre */    
+        $mform->addElement('select',  'semester',  get_string('semester','report_teachersession'),'', $attributes); // semestre */    
         $attributes = ["onchange" => "javascript:get_teacher(this.value,false)", ];
         $mform->addElement('select',  'course',  get_string('course'),'' , $attributes);
         $mform->addElement('select','teacher',get_string('teacher', 'report_teachersession'));
