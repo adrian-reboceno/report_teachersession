@@ -57,7 +57,7 @@ class filters extends \moodleform {
         }
         $attributes = ["onchange" => "javascript:get_course(this.value,false)", ];
         $mform->addElement('select',  'semester',  get_string('semester','report_teachersession'),'', $attributes); // semestre */    
-        $attributes = ["onchange" => "javascript:get_teacher(this.value,false)", ];
+        $attributes = ["onchange" => "javascript:get_users(this.value,false)", ];
         $mform->addElement('select',  'course',  get_string('course'),'' , $attributes);
         $mform->addElement('select','teacher',get_string('teacher', 'report_teachersession'));
 
